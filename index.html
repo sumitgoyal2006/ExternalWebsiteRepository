@@ -349,6 +349,25 @@ footer {
 <footer>
   © 2025 AITechone | +91-7080814180 | support@aitechone.com
 </footer>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00Dg5000001FiSG',
+				'ServiceAgentExternalWebsiteDeployment',
+				'https://orgfarm-0ae74dbfad-dev-ed.develop.my.site.com/ESWServiceAgentExternalWe1779983932736',
+				{
+					scrt2URL: 'https://orgfarm-0ae74dbfad-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-0ae74dbfad-dev-ed.develop.my.site.com/ESWServiceAgentExternalWe1779983932736/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 
 </body>
